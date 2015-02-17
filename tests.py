@@ -44,7 +44,7 @@ FILENAMES = [
 ]
 
 def make_temp_files():
-    print TMPDIR
+    print(TMPDIR)
     if not os.path.exists(ZIPPATH):
         for name in FILENAMES:
             file(os.path.join(TMPDIR, name), 'w').write(''.join(random.sample(string.printable, 10)))
